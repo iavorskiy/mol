@@ -1,0 +1,13 @@
+---
+ansible:
+  playbook: playbook.yml
+docker:
+  containers:
+    — name: test-role-docker
+      ansible_groups:
+        — group1
+      image: oraclelinux
+      image_version: latest
+      privileged: True
+
+
